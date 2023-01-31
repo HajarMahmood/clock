@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="clock">
+        <div class="hand hours" id="hours"></div>
+        <div class="hand minutes" id="minutes"></div>
+        <div class="hand seconds" id="seconds"></div>
+
+        <div class="circle"></div>
+
+        <span style="--i: 1"><b>1</b></span>
+        <span style="--i: 2"><b>2</b></span>
+        <span style="--i: 3"><b>3</b></span>
+        <span style="--i: 4"><b>4</b></span>
+        <span style="--i: 5"><b>5</b></span>
+        <span style="--i: 6"><b>6</b></span>
+        <span style="--i: 7"><b>7</b></span>
+        <span style="--i: 8"><b>8</b></span>
+        <span style="--i: 9"><b>9</b></span>
+        <span style="--i: 10"><b>10</b></span>
+        <span style="--i: 11"><b>11</b></span>
+        <span style="--i: 12"><b>12</b></span>
+      </div>
+
+      <div class="choose-theme">
+        <div class="box-theme active">
+          <div
+            class="theme theme1"
+            onclick="chooseTheme('hsl(229, 33%, 28%)' , 'hsl(229, 33%, 58%)' , 'hsl(229, 33%, 78%)')"
+          ></div>
+        </div>
+        <div class="box-theme">
+          <div
+            class="theme theme2"
+            onclick="chooseTheme('hsl(180, 99%, 39%)' , 'hsl(180, 60%, 39%)' , 'hsl(180, 30%, 39%)')"
+          ></div>
+        </div>
+        <div class="box-theme">
+          <div
+            class="theme theme3"
+            onclick="chooseTheme('hsl(41, 100%, 50%)' , 'hsl(41, 100%, 65%)' , 'hsl(41, 100%, 80%)')"
+          ></div>
+        </div>
+        <div class="box-theme">
+          <div
+            class="theme theme4"
+            onclick="chooseTheme('hsl(300, 49%, 69%)' , 'hsl(300, 25%, 69%)' , 'hsl(300, 9%, 69%)')"
+          ></div>
+        </div>
+        <div class="box-theme">
+          <div
+            class="theme theme5"
+            onclick="chooseTheme('hsl(346, 79%, 55%)' , 'hsl(346, 79%, 65%)' , 'hsl(346, 79%, 80%)')"
+          ></div>
+        </div>
+        <div class="box-theme">
+          <div
+            class="theme theme6"
+            onclick="chooseTheme('hsl(0, 100%, 82%)' , 'hsl(0, 70%, 82%)' , 'hsl(0, 30%, 82%)')"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
